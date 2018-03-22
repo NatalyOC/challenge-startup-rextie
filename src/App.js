@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-
-import './App.css';
-import ButtonGoogle from './components/ButtonGoogle';
+/* import ButtonGoogle from './components/ButtonGoogle';*/
+import Login from './components/Login'; 
+import Header from './components/Header';
 
 const App = () =>(
-  <ButtonGoogle/>
+  <div>
+    <Header/>
+    <Login/>
+  </div>
+
   
 )
 
