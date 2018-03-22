@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect} from 'react-redux';
-import { googleProvider } from '../Firebase';
+
 
 import { authActions } from '../actions';
 import * as firebase from 'firebase';
@@ -17,17 +17,17 @@ import * as firebase from 'firebase';
 ); */
 const Login =()=>{
   const handleAuthGoogle =()=> {
-    const provider = new firebase.auth.GoogleAuthProvider()
+    const provider = new firebase.auth.GoogleAuthProvider();
     
     firebase.auth().signInWithPopup(provider)
       .then(result => console.log(`${result.user.email} ha iniciado sesión`))
-      .catch(error => console.log(`Error ${error.code}: ${error.message}`))
+      .catch(error => console.log(`Error ${error.code}: ${error.message}`));
   };
  return (
   <div className="container">
   <div className="row">
     <div className="col s12 center-align">
-      <input type="button" value="Login with Google" onClick={handleAuthGoogle} />
+      <input type="button" value="Login with Google" onClick={this.handleAuthGoogle} />
     </div>
   </div>
 </div> 
@@ -35,7 +35,7 @@ const Login =()=>{
 )
 }
 
-const mapStateToProps=({state})=>({
+/* const mapStateToProps=({state})=>({
   authenticated:true,
 });
 
@@ -46,4 +46,6 @@ const mapDispatchToProps = (dispatch) =>({
 }); 
 
 
-export default connect(null,mapStateToProps)(Login);
+export default connect(null,mapStateToProps)(Login); */
+
+export default Login;

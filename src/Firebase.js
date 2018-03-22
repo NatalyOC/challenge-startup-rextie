@@ -1,7 +1,7 @@
 import * as firebase from 'firebase';
 
 const config={
-    piKey: "AIzaSyBa_RfzzQAkdNLXEgbw22EhubG46LvSTiM",
+    apiKey: "AIzaSyBa_RfzzQAkdNLXEgbw22EhubG46LvSTiM",
     authDomain: "app-rextie.firebaseapp.com",
     databaseURL: "https://app-rextie.firebaseio.com",
     projectId: "app-rextie",

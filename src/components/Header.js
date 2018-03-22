@@ -8,11 +8,9 @@ const Header = () => (
       </a>
       <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-          <button className="btn btn-outline-info my-2 my-sm-0" type="submit">LogIn</button>
+          <button className="btn btn-outline-info my-2 my-sm-0" type="submit">LogOut</button>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">LogOut</a>
-          </li>      
+               
       </ul>
     </nav>
   </header>
