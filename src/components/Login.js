@@ -15,8 +15,8 @@ import * as firebase from 'firebase';
 </div> 
 
 ); */
-const Login =({handleAuthGoogle})=>{
-  handleAuthGoogle () {
+const Login =()=>{
+  const handleAuthGoogle =()=> {
     const provider = new firebase.auth.GoogleAuthProvider()
     
     firebase.auth().signInWithPopup(provider)
@@ -24,10 +24,10 @@ const Login =({handleAuthGoogle})=>{
       .catch(error => console.log(`Error ${error.code}: ${error.message}`))
   };
  return (
-  <div className="container">{console.log(onGoogleSignIn)}
+  <div className="container">
   <div className="row">
     <div className="col s12 center-align">
-      <input type="button" value="Login with Google" onClick={onGoogleSignIn} />
+      <input type="button" value="Login with Google" onClick={handleAuthGoogle} />
     </div>
   </div>
 </div> 
