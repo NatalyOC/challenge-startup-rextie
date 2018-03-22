@@ -27,7 +27,7 @@ const Login =()=>{
   <div className="container">
   <div className="row">
     <div className="col s12 center-align">
-      <input type="button" value="Login with Google" onClick={this.handleAuthGoogle} />
+      <input type="button" value="Login with Google" onClick={handleAuthGoogle} />
     </div>
   </div>
 </div> 
